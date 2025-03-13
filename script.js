@@ -82,7 +82,6 @@
 
 // ! 6-2-variyant
 // ! sonning boluvchilarini chiqarish
-// !  ChatGPTdan oldim, bu 9ta qator kodni tushinish uchun pastdagini o'zim ishladim.
 
 // for (let i = 1; i <= 10; i++) {  // 1 dan 10 gacha bo'lgan sonlarni tekshiramiz
 //   let boluvchilar = '';  // Bo‘luvchilarni saqlash uchun bo‘sh satr
@@ -110,7 +109,6 @@
 
 // ! 7
 // ! sonning boluvchilarini chiqarish va yi'g'indisini chiqarish
-// !  ChatGPT
 
 // let sum = 0;
 // for (let i = 1; i <= 7; i++) {
@@ -203,14 +201,6 @@
 //   }
 // }
 
-// ! masala 1 dan 20 gacha bo'lgan sonlarni ekranga chiqaring, lekin agar son 13 bo'lsa, loopni to'xtating.
-
-
-
-
-
-
-// ! qoshimcha
 // ! For. Bir kg konfetning narxi berilgan (haqiqiy son). 0.1, 0.2, …, 0.9, 1 kg konfetni narxini chiqaruvchi programma tuzilsin.
 
 // let chocolatePrice = 12_999;
@@ -218,4 +208,94 @@
 //   let kg = i / 10;
 //   let price = chocolatePrice * kg;
 //   console.log(`${kg} kg konfet narxi: ${price} so'm`);
+// }
+
+// ! For3. n butun soni berilgan (n > 0). Quyidagi yig'indini hisoblovchi programma tuzilsin.
+
+// let n = 5;
+// let S = 0;
+// for (let i = 0; i <= n; i++) {
+//   S += (n + i) ** 2;
+//   console.log(n + i);
+// }
+// console.log(S);
+
+// ! For4. N butun soni berilgan. Quyidagi yig'indini chiqaruvchi programma tuzilsin.
+
+// let n = 5;
+// let sum = 0;
+// for (let i = 0; i < n; i++) {
+//   sum += (i + 1) ** (n - i);
+// }
+// console.log(sum);
+
+
+// ! For5. A va B butun soni berilgan (A < B). A va B sonlari orasidagi barcha butun sonlarni chiqaruvchi programma tuzilsin. Bunda har bir son o'zining qiymaticha chiqarilsin. Ya'ni 3 soni 3 marta chiqariladi.
+
+// let A = 5;
+// let B = 10;
+// for (let i = 0; i < B; i++) {
+//   for (let b = 0; b < i; b++) {
+//     console.log(i);
+//   }
+// }
+
+// ! For6. Sonning bo’luvchilarini topish;
+
+// let n = 120;
+// let dividers = '';
+
+// for (let i = 0; i <= n; i++) {
+//   if (n % i == 0) {
+//     dividers += `${i} `;
+//   }
+// }
+// console.log(dividers);
+
+// ! While1. N va K butun musbat sonlari berilgan. Faqat ayirish va qo'shish amallarini ishlatib N sonini K soniga bo'lgandagi qoldiq va butun qismini aniqlovchi programma tuzilsin.
+
+// let n = 10;
+// let k = 3;
+// let butun = 0;
+// while (n > k) {
+//   butun++;
+//   n -= k;
+// }
+// console.log(butun);
+// console.log(n);
+
+// ! While2. 2 sonining qandaydir darajasini bildiruvchi n butun soni berilgan (n > 0). n = 2^k ni aniqlovchi programma tuzilsin.
+// ! Input: 128
+// ! Output: 7
+
+// let k = 128;
+// let n = 0;
+// while (k >= 2) {
+//   k -= k / 2;
+//   n++;
+// }
+// console.log(n);
+
+// ! For10. n butun soni berilgan (n > 0). Shu sonning kvadratini quyidagi formula asosida hisoblovchi programma tuzilsin.
+// ! n^2=1+3+5+... + (2*n-1)
+
+// let n = 10;
+// for (let i = 0; i < n; i++) {
+//   console.log(i ** 2);
+// }
+
+// ! For20. Sonlarni quyidagi tartibda chiqaruvchi dastur tuzing. N = 5 bo’lganda,
+// ! 1
+// ! 1 2
+// ! 1 2 3
+// ! 1 2 3 4
+// ! 1 2 3 4 5
+
+// let n = 5;
+// for (let i = 0; i <= n; i++) {
+//   let s = '';
+//   for (let b = 0; b < i; b++) {
+//     s += `${i} `;
+//   }
+//   console.log(s);
 // }
